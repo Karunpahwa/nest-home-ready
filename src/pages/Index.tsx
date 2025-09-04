@@ -78,12 +78,17 @@ const Index = () => {
     {
       icon: <Truck size={40} />,
       title: "Doorstep Delivery",
-      description: "Free delivery included. Open box inspection before payment - just like buying new."
+      description: "Delivery in 72 hours. Open box inspection before payment - just like buying new."
     },
     {
       icon: <Eye size={40} />,
       title: "Complete Transparency",
       description: "See exact condition details, original purchase info, and honest pricing."
+    },
+    {
+      icon: <Leaf size={40} />,
+      title: "Eco-Friendly Impact",
+      description: "Every reused item saves 12kg CO₂ from the environment. Make a positive impact with every purchase."
     }
   ];
 
@@ -108,28 +113,6 @@ const Index = () => {
     }
   ];
 
-  const faqs = [
-    {
-      question: "How do you ensure the quality of items?",
-      answer: "Every item goes through our rigorous inspection process. We check functionality, cleanliness, and structural integrity. Items are cleaned and sanitized before delivery."
-    },
-    {
-      question: "What if I don't like the item after delivery?",
-      answer: "You can inspect the item before payment. If you're not satisfied, we'll take it back immediately. We also offer a 3-day return policy for peace of mind."
-    },
-    {
-      question: "How long does delivery take?",
-      answer: "Most items are delivered within 24-48 hours in Bangalore. We'll coordinate with you for the most convenient delivery time."
-    },
-    {
-      question: "Is the pricing negotiable?",
-      answer: "No negotiations needed! Our prices are already optimized for maximum savings. What you see is what you pay - no hidden costs."
-    },
-    {
-      question: "How does the bundle offer work?",
-      answer: "Buy any 3 Circle Nest items and get ₹500 instant credits in your account. Credits can be used for future purchases or additional items."
-    }
-  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -162,7 +145,7 @@ const Index = () => {
                 </div>
                 <div className="flex items-center gap-2 text-foreground">
                   <Truck size={20} />
-                  <span className="font-medium">Delivery Included</span>
+                  <span className="font-medium">Delivery in 72 Hours</span>
                 </div>
               </div>
               
@@ -173,7 +156,7 @@ const Index = () => {
                 </Button>
                 <Button variant="outline" size="lg">
                   <MessageCircle className="mr-2" size={20} />
-                  WhatsApp Support
+                  Speak to Circle
                 </Button>
               </div>
             </div>
@@ -226,7 +209,7 @@ const Index = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {benefits.map((benefit, index) => (
               <BenefitCard
                 key={index}
@@ -254,9 +237,9 @@ const Index = () => {
               <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto text-2xl font-bold">
                 1
               </div>
-              <h3 className="text-xl font-bold text-foreground">Browse & Buy</h3>
+              <h3 className="text-xl font-bold text-foreground">Select Your Items</h3>
               <p className="text-muted-foreground">
-                Select from our curated Nest collection. Add to cart and checkout securely.
+                Choose from our curated Nest collection of quality-verified home essentials.
               </p>
             </div>
             
@@ -274,52 +257,77 @@ const Index = () => {
               <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto text-2xl font-bold">
                 3
               </div>
-              <h3 className="text-xl font-bold text-foreground">Get It Delivered</h3>
+              <h3 className="text-xl font-bold text-foreground">We Handle Delivery</h3>
               <p className="text-muted-foreground">
-                Open box, inspect the item, and pay only when you're completely satisfied.
+                We handle pickup, inspection, and deliver to you within 72 hours.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Bundle Offer */}
+      {/* Nest Rewards Program */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="bg-success-light rounded-2xl p-8 text-center animate-fade-in">
             <div className="mb-6">
               <Badge variant="secondary" className="bg-success text-success-foreground text-lg px-4 py-2">
-                🎉 Special Bundle Offer
+                🎉 Nest Rewards Program
               </Badge>
             </div>
             
             <h2 className="text-3xl font-bold text-foreground mb-4">
-              Buy 3 Items → Get ₹500 Credits
+              Make 3 purchases → Unlock ₹500 Credits
             </h2>
-            <p className="text-xl text-muted-foreground mb-6">
-              Complete your home setup and save even more with our bundle deal
+            <p className="text-xl text-muted-foreground mb-8">
+              Complete your home setup and save even more with our rewards program
             </p>
             
-            <div className="grid md:grid-cols-3 gap-4 mb-8">
-              <div className="bg-background rounded-lg p-4">
-                <h4 className="font-semibold text-foreground mb-2">Study Setup</h4>
-                <p className="text-muted-foreground text-sm">Table + Chair + Lamp</p>
-                <p className="text-success font-bold">Save ₹2,000+</p>
-              </div>
-              <div className="bg-background rounded-lg p-4">
-                <h4 className="font-semibold text-foreground mb-2">Kitchen Essentials</h4>
-                <p className="text-muted-foreground text-sm">Fridge + Microwave + Table</p>
-                <p className="text-success font-bold">Save ₹3,500+</p>
-              </div>
-              <div className="bg-background rounded-lg p-4">
-                <h4 className="font-semibold text-foreground mb-2">Living Room</h4>
-                <p className="text-muted-foreground text-sm">Sofa + TV + Coffee Table</p>
-                <p className="text-success font-bold">Save ₹4,000+</p>
+            {/* Milestone Tracker */}
+            <div className="flex items-center justify-center mb-8 max-w-2xl mx-auto">
+              <div className="flex items-center w-full">
+                {/* Milestone 1 */}
+                <div className="flex flex-col items-center">
+                  <div className="w-12 h-12 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold mb-2">
+                    1
+                  </div>
+                  <p className="text-sm text-foreground font-medium">First Purchase</p>
+                </div>
+                
+                {/* Arrow 1 */}
+                <div className="flex-1 mx-4">
+                  <div className="h-1 bg-border rounded-full relative">
+                    <ArrowRight className="absolute right-0 top-1/2 transform -translate-y-1/2 text-border" size={16} />
+                  </div>
+                </div>
+                
+                {/* Milestone 2 */}
+                <div className="flex flex-col items-center">
+                  <div className="w-12 h-12 border-2 border-border bg-background text-muted-foreground rounded-full flex items-center justify-center text-sm font-bold mb-2">
+                    2
+                  </div>
+                  <p className="text-sm text-muted-foreground font-medium">Second Purchase</p>
+                </div>
+                
+                {/* Arrow 2 */}
+                <div className="flex-1 mx-4">
+                  <div className="h-1 bg-border rounded-full relative">
+                    <ArrowRight className="absolute right-0 top-1/2 transform -translate-y-1/2 text-border" size={16} />
+                  </div>
+                </div>
+                
+                {/* Milestone 3 */}
+                <div className="flex flex-col items-center">
+                  <div className="w-12 h-12 border-2 border-success bg-success-light text-success rounded-full flex items-center justify-center text-sm font-bold mb-2">
+                    ₹500
+                  </div>
+                  <p className="text-sm text-success font-medium">Credits Unlocked!</p>
+                </div>
               </div>
             </div>
             
             <Button variant="bundle" size="lg" className="text-lg">
-              Shop Nest Bundle
+              Start Your Nest Journey
               <ArrowRight className="ml-2" size={20} />
             </Button>
           </div>
@@ -348,104 +356,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Trust & Guarantee */}
-      <section className="py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Circle Guarantee</h2>
-            <p className="text-xl text-muted-foreground">
-              Your peace of mind is our priority
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-success-light rounded-full flex items-center justify-center">
-                  <CheckCircle className="text-success" size={24} />
-                </div>
-                <div>
-                  <h3 className="font-bold text-foreground mb-2">Quality Inspection Promise</h3>
-                  <p className="text-muted-foreground">
-                    Every item undergoes 15-point quality check including functionality, cleanliness, and structural integrity.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-primary-light rounded-full flex items-center justify-center">
-                  <Shield className="text-primary" size={24} />
-                </div>
-                <div>
-                  <h3 className="font-bold text-foreground mb-2">3-Day Protection</h3>
-                  <p className="text-muted-foreground">
-                    Not satisfied? Return within 3 days for full refund. No questions asked.
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-warning-light rounded-full flex items-center justify-center">
-                  <MessageCircle className="text-warning" size={24} />
-                </div>
-                <div>
-                  <h3 className="font-bold text-foreground mb-2">24/7 WhatsApp Support</h3>
-                  <p className="text-muted-foreground">
-                    Need help? Our support team is available round the clock via WhatsApp.
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-primary-light/20 rounded-xl p-8 text-center">
-              <Leaf className="text-success mx-auto mb-4" size={48} />
-              <h3 className="text-xl font-bold text-foreground mb-2">Environmental Impact</h3>
-              <p className="text-muted-foreground mb-4">
-                By choosing Circle Nest, you're helping reduce waste and carbon footprint.
-              </p>
-              <div className="grid grid-cols-2 gap-4 text-center">
-                <div>
-                  <div className="text-2xl font-bold text-success">50kg</div>
-                  <div className="text-sm text-muted-foreground">CO₂ Saved</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-success">85%</div>
-                  <div className="text-sm text-muted-foreground">Waste Reduced</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* FAQ Section */}
-      <section className="py-16 px-4 bg-accent/30">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Frequently Asked Questions</h2>
-            <p className="text-xl text-muted-foreground">
-              Everything you need to know about Circle Nest
-            </p>
-          </div>
-          
-          <Accordion type="single" collapsible className="space-y-4">
-            {faqs.map((faq, index) => (
-              <AccordionItem
-                key={index}
-                value={`item-${index}`}
-                className="bg-background rounded-lg px-6 border shadow-card"
-              >
-                <AccordionTrigger className="text-left font-semibold text-foreground hover:no-underline">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground pt-2">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
-      </section>
 
       {/* Final CTA Section */}
       <section className="py-16 px-4 gradient-primary">
@@ -463,7 +374,7 @@ const Index = () => {
               <ArrowRight className="ml-2" size={20} />
             </Button>
             <Button variant="outline" size="lg" className="text-lg border-white text-white hover:bg-white/10">
-              Get Notified About New Arrivals
+              Looking for something specific?
             </Button>
           </div>
           

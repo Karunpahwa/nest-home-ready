@@ -9,43 +9,43 @@ All colors MUST be HSL.
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 0 0% 13%; /* #212121 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 214 32% 97%; /* #F8FAFC */
+    --card-foreground: 0 0% 13%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 0 0% 13%;
 
-    /* Circle Nest Brand Colors */
-    --primary: 220 100% 45%; /* Trust Blue */
+    /* Circle Brand Colors */
+    --primary: 208 100% 50%; /* #008BFE */
     --primary-foreground: 0 0% 100%;
-    --primary-light: 220 100% 90%;
-    --primary-dark: 220 100% 35%;
+    --primary-light: 208 100% 88%;
+    --primary-dark: 208 100% 42%;
 
-    --secondary: 210 20% 96%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 0 0% 13%; /* #212121 */
 
-    --success: 142 76% 36%; /* Savings Green */
+    --success: 158 100% 35%; /* #00B37A */
     --success-foreground: 0 0% 100%;
-    --success-light: 142 76% 95%;
+    --success-light: 123 60% 62%; /* #43D35D */
 
-    --warning: 38 92% 50%; /* Accent Orange */
-    --warning-foreground: 0 0% 100%;
-    --warning-light: 38 92% 95%;
+    --warning: 54 100% 70%; /* #FFE066 */
+    --warning-foreground: 0 0% 13%;
+    --warning-light: 54 100% 92%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 214 32% 97%; /* #F8FAFC */
+    --muted-foreground: 0 0% 46%; /* #757575 */
 
-    --accent: 220 14.3% 95.9%;
-    --accent-foreground: 220 8.9% 46.1%;
+    --accent: 208 100% 96%; /* #E5F5FF */
+    --accent-foreground: 0 0% 13%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 359 91% 63%; /* #F6454A */
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 220 100% 45%;
+    --border: 213 27% 84%; /* #D9E0E7 */
+    --input: 213 27% 84%;
+    --ring: 208 100% 50%;
 
     --radius: 0.5rem;
 
@@ -76,21 +76,21 @@ All colors MUST be HSL.
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 220 100% 55%;
+    --primary: 208 100% 55%;
     --primary-foreground: 0 0% 100%;
-    --primary-light: 220 100% 20%;
-    --primary-dark: 220 100% 45%;
+    --primary-light: 208 100% 20%;
+    --primary-dark: 208 100% 45%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
 
-    --success: 142 76% 46%;
+    --success: 158 100% 45%;
     --success-foreground: 0 0% 100%;
-    --success-light: 142 76% 15%;
+    --success-light: 158 100% 15%;
 
-    --warning: 38 92% 60%;
+    --warning: 54 100% 60%;
     --warning-foreground: 0 0% 100%;
-    --warning-light: 38 92% 15%;
+    --warning-light: 54 100% 15%;
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;
@@ -135,7 +135,7 @@ All colors MUST be HSL.
   }
 
   .gradient-success {
-    background: linear-gradient(135deg, hsl(var(--success)), hsl(142 76% 30%));
+    background: linear-gradient(135deg, hsl(var(--success)), hsl(var(--success-light)));
   }
 
   .shadow-soft {
