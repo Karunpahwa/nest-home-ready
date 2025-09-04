@@ -28,11 +28,17 @@ All colors MUST be HSL.
 
     --success: 158 100% 35%; /* #00B37A */
     --success-foreground: 0 0% 100%;
-    --success-light: 123 60% 62%; /* #43D35D */
+    --success-light: 158 100% 95%; /* Light green background with high contrast */
 
     --warning: 54 100% 70%; /* #FFE066 */
     --warning-foreground: 0 0% 13%;
     --warning-light: 54 100% 92%;
+    
+    /* High contrast badge colors */
+    --badge-success-bg: 158 100% 25%; /* Dark green for high contrast on light backgrounds */
+    --badge-success-text: 0 0% 100%; /* White text on dark green */
+    --badge-condition-bg: 208 100% 96%; /* Light blue background */
+    --badge-condition-text: 208 100% 25%; /* Dark blue text */
 
     --muted: 214 32% 97%; /* #F8FAFC */
     --muted-foreground: 0 0% 46%; /* #757575 */
@@ -91,6 +97,12 @@ All colors MUST be HSL.
     --warning: 54 100% 60%;
     --warning-foreground: 0 0% 100%;
     --warning-light: 54 100% 15%;
+    
+    /* High contrast badge colors for dark mode */
+    --badge-success-bg: 158 100% 35%; /* Brighter green for dark backgrounds */
+    --badge-success-text: 0 0% 100%;
+    --badge-condition-bg: 208 100% 20%; /* Darker blue background */
+    --badge-condition-text: 0 0% 100%; /* White text */
 
     --muted: 217.2 32.6% 17.5%;
     --muted-foreground: 215 20.2% 65.1%;

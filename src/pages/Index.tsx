@@ -269,9 +269,9 @@ const Index = () => {
       {/* Nest Rewards Program */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="bg-success-light rounded-2xl p-8 text-center animate-fade-in">
+          <div className="bg-accent rounded-2xl p-8 text-center animate-fade-in border border-border">
             <div className="mb-6">
-              <Badge variant="secondary" className="bg-success text-success-foreground text-lg px-4 py-2">
+              <Badge variant="secondary" className="bg-[hsl(var(--badge-success-bg))] text-[hsl(var(--badge-success-text))] text-lg px-4 py-2 border-none">
                 🎉 Nest Rewards Program
               </Badge>
             </div>
@@ -318,10 +318,10 @@ const Index = () => {
                 
                 {/* Milestone 3 */}
                 <div className="flex flex-col items-center">
-                  <div className="w-12 h-12 border-2 border-success bg-success-light text-success rounded-full flex items-center justify-center text-sm font-bold mb-2">
+                  <div className="w-12 h-12 border-2 border-[hsl(var(--badge-success-bg))] bg-[hsl(var(--badge-success-bg))] text-[hsl(var(--badge-success-text))] rounded-full flex items-center justify-center text-xs font-bold mb-2">
                     ₹500
                   </div>
-                  <p className="text-sm text-success font-medium">Credits Unlocked!</p>
+                  <p className="text-sm text-[hsl(var(--badge-success-bg))] font-medium">Credits Unlocked!</p>
                 </div>
               </div>
             </div>
@@ -373,7 +373,7 @@ const Index = () => {
               Shop Nest Collection
               <ArrowRight className="ml-2" size={20} />
             </Button>
-            <Button variant="outline" size="lg" className="text-lg border-white text-white hover:bg-white/10">
+            <Button variant="outline" size="lg" className="text-lg border-2 border-white bg-white/10 text-white hover:bg-white hover:text-primary font-semibold">
               Looking for something specific?
             </Button>
           </div>

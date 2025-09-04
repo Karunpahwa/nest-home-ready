@@ -28,7 +28,7 @@ export const ProductCard = ({
           alt={title}
           className="w-full h-48 object-cover rounded-md"
         />
-        <Badge variant="secondary" className="absolute top-2 left-2 bg-success-light text-success font-medium">
+        <Badge variant="secondary" className="absolute top-2 left-2 bg-[hsl(var(--badge-condition-bg))] text-[hsl(var(--badge-condition-text))] font-medium border-none">
           {condition}
         </Badge>
       </div>
@@ -41,8 +41,8 @@ export const ProductCard = ({
           <span className="text-xl font-bold text-foreground">₹{circlePrice.toLocaleString()}</span>
         </div>
         
-        <div className="bg-success-light px-2 py-1 rounded-md inline-block">
-          <span className="text-success font-semibold text-sm">Save {savings}%</span>
+        <div className="bg-[hsl(var(--badge-success-bg))] px-2 py-1 rounded-md inline-block">
+          <span className="text-[hsl(var(--badge-success-text))] font-semibold text-sm">Save {savings}%</span>
         </div>
         
         <Button 
