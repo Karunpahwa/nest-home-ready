@@ -22,6 +22,7 @@ const buttonVariants = cva(
         hero: "gradient-primary text-primary-foreground hover:shadow-lg hover:scale-105 shadow-soft",
         cta: "bg-primary text-primary-foreground hover:bg-primary-dark shadow-soft hover:shadow-lg hover:scale-105 font-bold",
         bundle: "gradient-success text-success-foreground hover:shadow-lg hover:scale-105 shadow-soft",
+        whatsapp: "bg-[hsl(var(--whatsapp))] text-whatsapp-foreground hover:bg-[hsl(var(--whatsapp))]/90 shadow-soft hover:shadow-lg",
       },
       size: {
         default: "h-10 px-4 py-2",

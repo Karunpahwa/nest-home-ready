@@ -25,6 +25,7 @@ import heroImage from "@/assets/hero-apartment.jpg";
 import studyTableImage from "@/assets/study-table.jpg";
 import refrigeratorImage from "@/assets/refrigerator.jpg";
 import bedImage from "@/assets/bed.jpg";
+import circleLogo from "@/assets/circle-logo.png";
 
 const Index = () => {
   const hotDeals = [
@@ -96,7 +97,7 @@ const Index = () => {
     {
       name: "Priya Sharma",
       role: "Software Engineer",
-      content: "Setting up my Bangalore apartment was so easy with Circle Nest. Got a complete furniture set in 2 days without any hassle!",
+      content: "Setting up my Bangalore apartment was so easy with Circle. Got a complete furniture set in 2 days without any hassle!",
       rating: 5
     },
     {
@@ -108,7 +109,7 @@ const Index = () => {
     {
       name: "Ananya Singh",
       role: "Marketing Executive",
-      content: "No more dealing with sketchy sellers! Circle Nest made furniture shopping actually enjoyable and stress-free.",
+      content: "No more dealing with sketchy sellers! Circle made furniture shopping actually enjoyable and stress-free.",
       rating: 5
     }
   ];
@@ -116,6 +117,13 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Header */}
+      <header className="bg-background py-4 px-4 border-b border-border">
+        <div className="max-w-6xl mx-auto">
+          <img src="/lovable-uploads/1b39179d-4984-49b6-8a16-4cbbd51436ec.png" alt="Circle" className="h-12 w-auto" />
+        </div>
+      </header>
+
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary-light via-background to-success-light py-16 px-4 overflow-hidden">
         <div className="max-w-6xl mx-auto">
@@ -123,14 +131,14 @@ const Index = () => {
             <div className="space-y-6 animate-slide-up">
               <div className="space-y-2">
                 <Badge variant="outline" className="bg-primary-light border-primary text-primary">
-                  🏠 Circle Nest - Home Essentials
+                  🏠 Circle - Home Essentials
                 </Badge>
                 <h1 className="text-4xl md:text-5xl font-bold text-foreground leading-tight">
-                  Get quality home essentials at 
-                  <span className="text-primary"> unbeatable prices</span>
+                  Quality home essentials at unbeatable prices in 
+                  <span className="text-primary"> Bangalore</span>
                 </h1>
                 <p className="text-xl text-muted-foreground">
-                  No hassle, guaranteed quality. Perfect for young professionals setting up their new homes in Bangalore.
+                  Skip the hassle of marketplace hunting. Get furniture & appliances delivered in 72 hours - quality checked, payment protected.
                 </p>
               </div>
               
@@ -151,12 +159,12 @@ const Index = () => {
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button variant="hero" size="lg" className="text-lg">
-                  Shop Nest Collection
+                  Shop Circle Collection
                   <ArrowRight className="ml-2" size={20} />
                 </Button>
-                <Button variant="outline" size="lg">
+                <Button variant="whatsapp" size="lg" className="text-lg">
                   <MessageCircle className="mr-2" size={20} />
-                  Speak to Circle
+                  💬 Speak to Circle
                 </Button>
               </div>
             </div>
@@ -192,87 +200,20 @@ const Index = () => {
           
           <div className="text-center mt-8">
             <Button variant="outline" size="lg">
-              View All Nest Collection
+              View All Circle Collection
               <ChevronRight className="ml-2" size={20} />
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Why Circle Nest */}
-      <section className="py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">Why Circle Nest?</h2>
-            <p className="text-xl text-muted-foreground">
-              The smart way to set up your home without the marketplace headaches
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {benefits.map((benefit, index) => (
-              <BenefitCard
-                key={index}
-                icon={benefit.icon}
-                title={benefit.title}
-                description={benefit.description}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* How It Works */}
-      <section className="py-16 px-4 bg-primary-light/20">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-4">How It Works</h2>
-            <p className="text-xl text-muted-foreground">
-              Simple as buying new items online
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center space-y-4 animate-slide-up">
-              <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto text-2xl font-bold">
-                1
-              </div>
-              <h3 className="text-xl font-bold text-foreground">Select Your Items</h3>
-              <p className="text-muted-foreground">
-                Choose from our curated Nest collection of quality-verified home essentials.
-              </p>
-            </div>
-            
-            <div className="text-center space-y-4 animate-slide-up" style={{animationDelay: '0.2s'}}>
-              <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto text-2xl font-bold">
-                2
-              </div>
-              <h3 className="text-xl font-bold text-foreground">We Handle Everything</h3>
-              <p className="text-muted-foreground">
-                Inspection, pickup, cleaning, and quality verification - all done by our team.
-              </p>
-            </div>
-            
-            <div className="text-center space-y-4 animate-slide-up" style={{animationDelay: '0.4s'}}>
-              <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto text-2xl font-bold">
-                3
-              </div>
-              <h3 className="text-xl font-bold text-foreground">We Handle Delivery</h3>
-              <p className="text-muted-foreground">
-                We handle pickup, inspection, and deliver to you within 72 hours.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Nest Rewards Program */}
+      {/* Circle Rewards Program */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="bg-accent rounded-2xl p-8 text-center animate-fade-in border border-border">
             <div className="mb-6">
               <Badge variant="secondary" className="bg-[hsl(var(--badge-success-bg))] text-[hsl(var(--badge-success-text))] text-lg px-4 py-2 border-none">
-                🎉 Nest Rewards Program
+                🎉 Circle Rewards Program
               </Badge>
             </div>
             
@@ -327,7 +268,7 @@ const Index = () => {
             </div>
             
             <Button variant="bundle" size="lg" className="text-lg">
-              Start Your Nest Journey
+              Start Your Circle Journey
               <ArrowRight className="ml-2" size={20} />
             </Button>
           </div>
@@ -340,7 +281,7 @@ const Index = () => {
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-2 mb-4">
               <Users className="text-primary" size={24} />
-              <span className="text-lg font-semibold text-primary">Join 1000+ Happy Nest Customers</span>
+              <span className="text-lg font-semibold text-primary">Join 1000+ Happy Circle Customers</span>
             </div>
             <h2 className="text-3xl font-bold text-foreground mb-4">What Our Customers Say</h2>
           </div>
@@ -370,11 +311,12 @@ const Index = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="secondary" size="lg" className="text-lg bg-white text-primary hover:bg-white/90">
-              Shop Nest Collection
+              Shop Circle Collection
               <ArrowRight className="ml-2" size={20} />
             </Button>
-            <Button variant="outline" size="lg" className="text-lg border-2 border-white bg-white/10 text-white hover:bg-white hover:text-primary font-semibold">
-              Looking for something specific?
+            <Button variant="whatsapp" size="lg" className="text-lg">
+              <MessageCircle className="mr-2" size={20} />
+              💬 Did not find what you were looking for?
             </Button>
           </div>
           
