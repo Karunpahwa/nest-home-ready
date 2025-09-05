@@ -162,9 +162,9 @@ const Index = () => {
                   Shop Circle Collection
                   <ArrowRight className="ml-2" size={20} />
                 </Button>
-                <Button variant="whatsapp" size="lg" className="text-lg">
-                  <MessageCircle className="mr-2" size={20} />
-                  💬 Speak to Circle
+                <Button variant="whatsapp" size="lg" className="text-lg shadow-lg hover:shadow-xl border-2 border-white/20">
+                  <img src="/lovable-uploads/fc9b9a33-1f05-4e7a-9a59-89c3c37a48f7.png" alt="WhatsApp" className="mr-2 w-5 h-5" />
+                  Speak to Circle
                 </Button>
               </div>
             </div>
@@ -314,9 +314,9 @@ const Index = () => {
               Shop Circle Collection
               <ArrowRight className="ml-2" size={20} />
             </Button>
-            <Button variant="whatsapp" size="lg" className="text-lg">
-              <MessageCircle className="mr-2" size={20} />
-              💬 Did not find what you were looking for?
+            <Button variant="whatsapp" size="lg" className="text-lg shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-200">
+              <img src="/lovable-uploads/fc9b9a33-1f05-4e7a-9a59-89c3c37a48f7.png" alt="WhatsApp" className="mr-2 w-5 h-5" />
+              Did not find what you were looking for?
             </Button>
           </div>
           
